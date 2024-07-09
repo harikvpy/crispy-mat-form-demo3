@@ -1,6 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { bootstrapApplication } from '@angular/platform-browser';
-import 'zone.js';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {
   FORM_ERRORS,
@@ -9,18 +12,12 @@ import {
   CrispyBuilder,
   CrispyCustomComponent,
   CrispyDiv,
-  CrispyEmail,
   CrispyForm,
   CrispyMatFormModule,
-  CrispyRow,
-  CrispyTemplate,
-  CrispyText,
+  CrispyTemplate
 } from '@smallpearl/crispy-mat-form';
-import { FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { MatButtonModule } from '@angular/material/button';
+import 'zone.js';
 import { MyTelInputComponent } from './components/my-tel-input/my-tel-input.component';
-import { MatFormFieldModule } from '@angular/material/form-field';
 
 @Component({
   selector: 'app-root',
